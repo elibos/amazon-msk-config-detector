@@ -39,7 +39,7 @@ getbootstartBrokers=msk.get_bootstrap_brokers(ClusterArn=strClusterarn)
 if mskAuth=="PLAIN":
     bootstartBrokers=getbootstartBrokers['BootstrapBrokerString']
 elif mskAuth=="SASL":
-    bootstartBrokers=getbootstartBrokers['BootstrapBrokerStringSaslScram']
+    bootstartBrokers=getbootstartBrokers['BootstrapBrokerStringSaslIam']
 
 
 strGP3Candidate=""
